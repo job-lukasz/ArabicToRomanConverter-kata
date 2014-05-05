@@ -3,8 +3,9 @@ package main;
 public class AraToRomConverter {
 	public String convert(int arabicNumber){
 		String result = "";
-		if(arabicNumber == 1){
-			result = "I";
+		while(arabicNumber>0){
+			result += "I";
+			arabicNumber--;
 		}
 		return result;
 	}

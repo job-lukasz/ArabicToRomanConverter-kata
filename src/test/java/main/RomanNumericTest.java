@@ -10,6 +10,7 @@ public class RomanNumericTest {
 	 return new Object[][] {
 	   { new Integer(0), "" },
 	   { new Integer(1), "I" },
+	   { new Integer(2), "II" },
 	 };
 	}
 
