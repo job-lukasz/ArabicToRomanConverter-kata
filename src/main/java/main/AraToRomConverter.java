@@ -50,9 +50,7 @@ public class AraToRomConverter {
 			arabicNumber -= currentRomanNumber;
 			return numberMap.get(currentRomanNumber);
 		}
-		if (arabicNumberSetIt.hasNext()) {
-			currentRomanNumber = arabicNumberSetIt.next();
-		}
+		currentRomanNumber = arabicNumberSetIt.next();
 		return "";
 	}
 }
