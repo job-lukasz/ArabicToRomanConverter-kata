@@ -6,14 +6,18 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class AraToRomConverter {
-	private int araNumber;
+	private int arabicNumber;
 	
 	private static final Map<Integer, String> numberMap;
     static {
         Map<Integer, String> tempMap = new TreeMap<Integer, String>(java.util.Collections.reverseOrder());
-        tempMap.put(10, "X");
-        tempMap.put(5, "V");
         tempMap.put(1, "I");
+        tempMap.put(5, "V");
+        tempMap.put(10, "X");
+        tempMap.put(50, "L");
+        tempMap.put(100, "C");
+        tempMap.put(500, "D");
+        tempMap.put(1000, "M");
         numberMap = Collections.unmodifiableMap(tempMap);
     }
     
@@ -22,9 +26,9 @@ public class AraToRomConverter {
     
 	public String convert(int numberToConvert){
 		String result = "";
-		araNumber = numberToConvert;
+		arabicNumber = numberToConvert;
 		initIterator();
-		while(araNumber>0){
+		while(arabicNumber>0){
 			result+=findMaxRomanNumber();
 		}
 		return result;
@@ -36,8 +40,8 @@ public class AraToRomConverter {
 	}
 
 	private String findMaxRomanNumber(){
-		if(currentRomanNumber<=araNumber){
-			araNumber-=currentRomanNumber;
+		if(currentRomanNumber<=arabicNumber){
+			arabicNumber-=currentRomanNumber;
 			return numberMap.get(currentRomanNumber);
 		}
 		if(arabicNumberSetIt.hasNext()){
