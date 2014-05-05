@@ -1,25 +1,25 @@
 package main;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class RomanNumericTest {
-  @Test
-  public void ZeroNumberToEmptyString() {
+  @DataProvider(name = "TestingNumbers")
+	public Object[][] numbersArabicRoman() {
+	 return new Object[][] {
+	   { new Integer(0), "" },
+	   { new Integer(1), "I" },
+	 };
+	}
+
+  @Test(dataProvider = "TestingNumbers")
+  public void ArabicNumberToRomanString(int arabic, String roman) {
 	  //Arrange
 	  AraToRomConverter converter = new AraToRomConverter();
 	  //Act
-	  String result = converter.convert(0);
+	  String result = converter.convert(arabic);
 	  //Assert
-	  Assert.assertEquals(result, "");
-  }
-  @Test
-  public void OneNumberToIString() {
-	  //Arrange
-	  AraToRomConverter converter = new AraToRomConverter();
-	  //Act
-	  String result = converter.convert(1);
-	  //Assert
-	  Assert.assertEquals(result, "I");
+	  Assert.assertEquals(result, roman);
   }
 }

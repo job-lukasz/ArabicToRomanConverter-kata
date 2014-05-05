@@ -2,9 +2,10 @@ package main;
 
 public class AraToRomConverter {
 	public String convert(int arabicNumber){
+		String result = "";
 		if(arabicNumber == 1){
-			return "I";
+			result = "I";
 		}
-		return "";
+		return result;
 	}
 }
