@@ -35,7 +35,7 @@ public class AraToRomConverter {
 		arabicNumber = numberToConvert;
 		initIterator();
 		while (arabicNumber > 0) {
-			result.append(findMaxRomanNumber());
+			result.append(getMaxRomanNumber());
 		}
 		return result.toString();
 	}
@@ -45,7 +45,7 @@ public class AraToRomConverter {
 		currentRomanNumber = arabicNumberSetIt.next();
 	}
 
-	private String findMaxRomanNumber() {
+	private String getMaxRomanNumber() {
 		if (currentRomanNumber <= arabicNumber) {
 			arabicNumber -= currentRomanNumber;
 			return numberMap.get(currentRomanNumber);
