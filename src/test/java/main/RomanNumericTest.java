@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class RomanNumericTest {
 	@DataProvider(name = "TestingNumbers")
 	public Object[][] numbersArabicRoman() {
-		return new Object[][] { { new Integer(0), "" }, { new Integer(1), "I" }, { new Integer(2), "II" }, { new Integer(5), "V" }, };
+		return new Object[][] { { new Integer(0), "" }, { new Integer(1), "I" }, { new Integer(2), "II" }, { new Integer(5), "V" },{ new Integer(10), "X" }, };
 	}
 
 	@Test(dataProvider = "TestingNumbers")
