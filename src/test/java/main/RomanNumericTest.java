@@ -13,4 +13,13 @@ public class RomanNumericTest {
 	  //Assert
 	  Assert.assertEquals(result, "");
   }
+  @Test
+  public void OneNumberToIString() {
+	  //Arrange
+	  AraToRomConverter converter = new AraToRomConverter();
+	  //Act
+	  String result = converter.convert(1);
+	  //Assert
+	  Assert.assertEquals(result, "I");
+  }
 }
