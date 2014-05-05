@@ -23,6 +23,9 @@ public class RomanNumericTest {
 				{ new Integer(500), "D" },
 				{ new Integer(900), "CM" }, 
 				{ new Integer(1000), "M" },
+				{ new Integer(1999), "MCMXCIX" }, 
+				{ new Integer(3448), "MMMCDXLVIII" }, 
+				{ new Integer(1684), "MDCLXXXIV" }, 
 				};
 	}
 
