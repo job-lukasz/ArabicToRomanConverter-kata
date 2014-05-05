@@ -10,12 +10,18 @@ public class RomanNumericTest {
 		return new Object[][] { 
 				{ new Integer(0), "" }, 
 				{ new Integer(1), "I" }, 
-				{ new Integer(2), "II" }, 
+				{ new Integer(2), "II" },
+				{ new Integer(4), "IV" }, 
 				{ new Integer(5), "V" },
+				{ new Integer(9), "IX" },  
 				{ new Integer(10), "X" },
+				{ new Integer(40), "XL" }, 
 				{ new Integer(50), "L" },
+				{ new Integer(90), "XC" }, 
 				{ new Integer(100), "C" },
+				{ new Integer(400), "CD" }, 
 				{ new Integer(500), "D" },
+				{ new Integer(900), "CM" }, 
 				{ new Integer(1000), "M" },
 				};
 	}

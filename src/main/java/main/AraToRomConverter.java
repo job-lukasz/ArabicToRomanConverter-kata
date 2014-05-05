@@ -12,11 +12,17 @@ public class AraToRomConverter {
     static {
         Map<Integer, String> tempMap = new TreeMap<Integer, String>(java.util.Collections.reverseOrder());
         tempMap.put(1, "I");
+        tempMap.put(4, "IV");
         tempMap.put(5, "V");
+        tempMap.put(9, "IX");
         tempMap.put(10, "X");
+        tempMap.put(40, "XL");
         tempMap.put(50, "L");
+        tempMap.put(90, "XC");
         tempMap.put(100, "C");
+        tempMap.put(400, "CD");
         tempMap.put(500, "D");
+        tempMap.put(900, "CM");
         tempMap.put(1000, "M");
         numberMap = Collections.unmodifiableMap(tempMap);
     }
