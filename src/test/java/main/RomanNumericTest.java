@@ -25,6 +25,13 @@ public class RomanNumericTest {
 								 { "C", new Integer(100)},
 								 { "D", new Integer(500)},
 								 { "M", new Integer(1000)},
+								 { "IV", new Integer(4)},
+								 { "IX", new Integer(9)},
+								 { "XL", new Integer(40)},
+								 { "XC", new Integer(90)},
+								 { "CD", new Integer(400)},
+								 { "CM", new Integer(900)},
+								 { "MMMCDXLVIII",new Integer(3448) }
 								 };
 	}
 
