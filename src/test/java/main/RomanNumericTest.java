@@ -20,7 +20,11 @@ public class RomanNumericTest {
 								 { "I", new Integer(1) }, 
 								 { "II", new Integer(2) },
 								 { "V", new Integer(5)},
-								 { "X", new Integer(10)}
+								 { "X", new Integer(10)},
+								 { "L", new Integer(50)},
+								 { "C", new Integer(100)},
+								 { "D", new Integer(500)},
+								 { "M", new Integer(1000)},
 								 };
 	}
 
