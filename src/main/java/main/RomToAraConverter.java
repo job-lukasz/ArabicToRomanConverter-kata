@@ -9,8 +9,11 @@ public class RomToAraConverter {
 			if(romanNumber.charAt(currentChar-1) == 'I'){
 				arabNumber++;
 			}
+			else if(romanNumber.charAt(currentChar-1) == 'V'){
+				arabNumber+=5;
+			}
 			else {
-				arabNumber+=5;	
+				arabNumber+=10;	
 			}
 			currentChar--;
 		}
