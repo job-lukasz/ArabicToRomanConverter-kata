@@ -2,8 +2,8 @@ package main;
 
 public class RomToAraConverter {
 
-	public int convert(String string) {
-		return 1;
+	public int convert(String romanNumber) {
+		return romanNumber.length();
 	}
 
 }

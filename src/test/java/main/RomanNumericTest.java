@@ -49,4 +49,13 @@ public class RomanNumericTest {
 		Assert.assertEquals(result, 1);
 	}
 	
+	@Test
+	public void RomanStringIIToArabNumber2() {
+		// Arrange
+		RomToAraConverter converter = new RomToAraConverter();
+		// Act
+		int result = converter.convert("II");
+		// Assert
+		Assert.assertEquals(result, 2);
+	}
 }
