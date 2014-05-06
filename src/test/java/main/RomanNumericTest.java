@@ -38,4 +38,15 @@ public class RomanNumericTest {
 		// Assert
 		Assert.assertEquals(result, roman);
 	}
+	
+	@Test
+	public void RomanStringIToArabNumber1() {
+		// Arrange
+		RomToAraConverter converter = new RomToAraConverter();
+		// Act
+		int result = converter.convert("I");
+		// Assert
+		Assert.assertEquals(result, 1);
+	}
+	
 }
