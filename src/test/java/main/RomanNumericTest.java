@@ -35,7 +35,7 @@ public class RomanNumericTest {
 	}
 
 	@Test(dataProvider = "RomanToArabTestingNumbers")
-	public void RomanStringIToArabNumber1(String roman, int arabic) {
+	public void RomanStringToArabNumber(String roman, int arabic) {
 		// Arrange
 		RomToAraConverter converter = new RomToAraConverter();
 		// Act
