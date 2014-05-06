@@ -16,7 +16,11 @@ public class RomanNumericTest {
 
 	@DataProvider(name = "RomanToArabTestingNumbers")
 	public Object[][] numbersRomanArabic() {
-		return new Object[][] { { "", new Integer(0) }, { "I", new Integer(1) }, { "II", new Integer(2) }, };
+		return new Object[][] { { "", new Integer(0) }, 
+								 { "I", new Integer(1) }, 
+								 { "II", new Integer(2) },
+								 { "V", new Integer(5)}
+								 };
 	}
 
 	@Test(dataProvider = "ArabToRomanTestingNumbers")
